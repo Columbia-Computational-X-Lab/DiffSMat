@@ -1,0 +1,12 @@
+*.swp
+CMakeFiles/*
+src/tests/CMakeFiles/*
+src/tests/cmake_install.cmake 
+src/tests/Makefile
+src/apps/CMakeFiles/*
+src/apps/cmake_install.cmake 
+src/apps/Makefile
+tests/*
+Makefile
+CMakeCache.txt
+cmake_install.cmake 
