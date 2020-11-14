@@ -5,7 +5,7 @@
 
 struct LayerStructure
 {
-	Eigen::VectorXs coordX;
-	Eigen::VectorXs coordY;
-	Eigen::MatrixXcs eps;
+    Eigen::VectorXs coordX;
+    Eigen::VectorXs coordY;
+    Eigen::MatrixXcs eps;
 };

@@ -6,12 +6,12 @@
 class MKLEigenSolver
 {
 private:
-	Eigen::MatrixXcs V_;
-	Eigen::VectorXcs d_;
+    Eigen::MatrixXcs V_;
+    Eigen::VectorXcs d_;
 
 public:
-	MKLEigenSolver() {}
-	void compute(const Eigen::MatrixXcs& A);
-	const Eigen::MatrixXcs& eigenvectors() const { return V_; }
-	const Eigen::VectorXcs& eigenvalues() const { return d_; }
+    MKLEigenSolver() {}
+    void compute(const Eigen::MatrixXcs& A);
+    const Eigen::MatrixXcs& eigenvectors() const { return V_; }
+    const Eigen::VectorXcs& eigenvalues() const { return d_; }
 };
