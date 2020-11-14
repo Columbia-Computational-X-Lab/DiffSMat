@@ -2,7 +2,7 @@
 
 Differentiable Scattering Matrix provides the code for the paper
 
-Ziwei Zhu, and Changxi Zheng. Differentiable Scattering Matrix for Optimization of Photonic Structures. *arXiv preprint* arXiv:2009.10933 (2020).
+Ziwei Zhu, and Changxi Zheng. [Differentiable Scattering Matrix for Optimization of Photonic Structures](https://arxiv.org/abs/2009.10933). *arXiv preprint* arXiv:2009.10933 (2020).
 ## Compile
 The C++ program is currently built on Ubuntu 18.04. The lastest C++ version (C++17) is recommended.
 
@@ -14,7 +14,7 @@ It depends on the following libraries:
 - [Intel TBB](https://software.intel.com/content/www/us/en/develop/tools/threading-building-blocks.html) (2.2)
 - [Intel Math Kernel Library](https://software.intel.com/content/www/us/en/develop/tools/math-kernel-library.html)
 
-*CBlAS* may be used for acceleration on Mac. We do not provide support on that.
+*CBLAS* may be used for acceleration on Mac OS. We do not provide support on that.
 
 Please make sure you have the above libraries correctly installed to proceed. Once all dependencies are solved, you can do the following steps to build the program.
 
