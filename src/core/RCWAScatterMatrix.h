@@ -81,12 +81,12 @@ class RCWAScatterMatrix
         {   return inv_I_minus_invAXB2_Sol_; }
 
     private:
-	// assume no PML layer
-	void evaluateHomogeneousLayer(
-		scalar lambda, scalex eps,
-		MatrixType& eigvecE,
-		MatrixType& eigvecH,
-		VectorType& keff);
+    // assume no PML layer
+    void evaluateHomogeneousLayer(
+        scalar lambda, scalex eps,
+        MatrixType& eigvecE,
+        MatrixType& eigvecH,
+        VectorType& keff);
 
     private:
         int     nx_, ny_;
