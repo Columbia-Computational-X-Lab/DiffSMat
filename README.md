@@ -14,7 +14,7 @@ It depends on the following libraries:
 - [Intel TBB](https://software.intel.com/content/www/us/en/develop/tools/threading-building-blocks.html) (2.2)
 - [Intel Math Kernel Library](https://software.intel.com/content/www/us/en/develop/tools/math-kernel-library.html)
 
-*CBLAS* may be used for acceleration on Mac OS. We do not provide support on that.
+*CBLAS* may be used for acceleration on Mac OS, although this compilation has not been tested on Mac OS.
 
 Please make sure you have the above libraries correctly installed to proceed. Once all dependencies are solved, you can do the following steps to build the program.
 
