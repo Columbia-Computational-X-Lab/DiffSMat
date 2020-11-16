@@ -1,6 +1,6 @@
 # DiffSMat
 
-Differentiable Scattering Matrix provides the code for the paper
+`DiffSMat` provides the code for the paper
 
 Ziwei Zhu, and Changxi Zheng. [Differentiable Scattering Matrix for Optimization of Photonic Structures](https://arxiv.org/abs/2009.10933). *arXiv preprint* arXiv:2009.10933 (2020).
 ## Compile
