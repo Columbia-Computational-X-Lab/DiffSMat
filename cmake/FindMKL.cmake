@@ -30,9 +30,9 @@ INCLUDE(CheckTypeSize)
 INCLUDE(CheckFunctionExists)
 
 # Intel Compiler Suite
-SET(INTEL_COMPILER_DIR "/home/ziwei/intel" CACHE STRING
+SET(INTEL_COMPILER_DIR $ENV{ONEAPI_ROOT} CACHE STRING
   "Root directory of the Intel Compiler Suite (contains ipp, mkl, etc.)")
-SET(INTEL_MKL_DIR "/home/ziwei/intel/mkl" CACHE STRING
+SET(INTEL_MKL_DIR $ENV{MKLROOT} CACHE STRING
   "Root directory of the Intel MKL (standalone)")
 SET(MKL_THREADING "OMP" CACHE STRING "MKL flavor: SEQ, TBB or OMP (default)")
 

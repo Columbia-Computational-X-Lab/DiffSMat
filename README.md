@@ -1,8 +1,8 @@
 # DiffSMat
 
 `DiffSMat` provides the code for the paper
+Ziwei Zhu, and Changxi Zheng. [Differentiable Scattering Matrix for Optimization of Photonic Structures](https://opg.optica.org/oe/fulltext.cfm?uri=oe-28-25-37773). Optics Express 28.25 (2020).
 
-Ziwei Zhu, and Changxi Zheng. [Differentiable Scattering Matrix for Optimization of Photonic Structures](https://arxiv.org/abs/2009.10933). *arXiv preprint* arXiv:2009.10933 (2020).
 ## Compile
 The C++ program is currently built on Ubuntu 18.04. The lastest C++ version (C++17) is recommended.
 
