@@ -74,7 +74,7 @@ mark_as_advanced(ROOT_BIN_DIR)
 mark_as_advanced(ROOT_TESTS_DIR)
 
 #===================================================================
-find_package(TBB 2.2 REQUIRED)
+find_package(TBB 2021.5 REQUIRED)
 if (TBB_FOUND)
     message(STATUS "Found Intel TBB version ${TBB_VERSION}: ${TBB_INCLUDE_DIRS} ${TBB_LIBRARIES}")
 endif ()
@@ -88,7 +88,7 @@ if(MKL_FOUND)
     add_definitions(-DEIGEN_USE_MKL_ALL)
 endif()
 
-find_package(Eigen3 3.3 CONFIG REQUIRED)
+find_package(Eigen3 3.3.9 CONFIG REQUIRED)
 if (EIGEN3_FOUND)
    message(STATUS "Found Eigen version ${EIGEN3_VERSION_STRING}: ${EIGEN3_INCLUDE_DIRS}")
 endif (EIGEN3_FOUND)

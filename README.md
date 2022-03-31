@@ -10,11 +10,9 @@ We use CMake (3.10 or newer) and Make to build the program.
 
 It depends on the following libraries:
 
-- [Eigen 3](http://eigen.tuxfamily.org/index.php?title=Main_Page) (3.1.2 or newer)
-- [Intel TBB](https://software.intel.com/content/www/us/en/develop/tools/threading-building-blocks.html) (2.2)
-- [Intel Math Kernel Library](https://software.intel.com/content/www/us/en/develop/tools/math-kernel-library.html)
-
-*CBLAS* may be used for acceleration on Mac OS, although this compilation has not been tested on Mac OS.
+- [Eigen 3](http://eigen.tuxfamily.org/index.php?title=Main_Page) (3.3.9 or newer, earlier version like 3.3.7 may be not compatible due to API change)
+- [Intel® oneAPI Threading Building Blocks](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html) (2021.5 or newer)
+- [Intel® oneAPI Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html)
 
 Please make sure you have the above libraries correctly installed to proceed. Once all dependencies are solved, you can do the following steps to build the program.
 
