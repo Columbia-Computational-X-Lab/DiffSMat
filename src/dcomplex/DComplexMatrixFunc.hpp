@@ -214,15 +214,15 @@ namespace internal {
  *
  * We use TBB multi-threading to improve its performance.
  */
-template<typename Index, int LhsStorageOrder, bool ConjugateLhs, int RhsStorageOrder, bool ConjugateRhs>
-struct general_matrix_matrix_product<Index, dtmm::DComplexd, LhsStorageOrder, ConjugateLhs, dtmm::DComplexd, RhsStorageOrder, ConjugateRhs, ColMajor>
+template<typename Index, int LhsStorageOrder, bool ConjugateLhs, int RhsStorageOrder, bool ConjugateRhs, int ResInnerStride>
+struct general_matrix_matrix_product<Index, dtmm::DComplexd, LhsStorageOrder, ConjugateLhs, dtmm::DComplexd, RhsStorageOrder, ConjugateRhs, ColMajor,ResInnerStride>
 {
     typedef gebp_traits<dtmm::DComplexd, dtmm::DComplexd> Traits;
 
     static void run(Index rows, Index cols, Index depth,
             const dtmm::DComplexd* _lhs, Index lhsStride,
             const dtmm::DComplexd* _rhs, Index rhsStride,
-            dtmm::DComplexd* res, Index resStride,
+            dtmm::DComplexd* res, Index resIncr, Index resStride,
             dtmm::DComplexd alpha,
             level3_blocking<dtmm::DComplexd, dtmm::DComplexd>& /*blocking*/,
             GemmParallelInfo<Index>* /*info = 0*/)
@@ -231,15 +231,15 @@ struct general_matrix_matrix_product<Index, dtmm::DComplexd, LhsStorageOrder, Co
     }
 };
 
-template<typename Index>
-struct general_matrix_matrix_product<Index, dtmm::DComplexd, ColMajor, false, dtmm::DComplexd, ColMajor, false, ColMajor>
+template<typename Index, int ResInnerStride>
+struct general_matrix_matrix_product<Index, dtmm::DComplexd, ColMajor, false, dtmm::DComplexd, ColMajor, false, ColMajor, ResInnerStride>
 {
     typedef gebp_traits<dtmm::DComplexd, dtmm::DComplexd> Traits;
 
     static void run(Index rows, Index cols, Index depth,
             const dtmm::DComplexd* _lhs, Index lhsStride,
             const dtmm::DComplexd* _rhs, Index rhsStride,
-            dtmm::DComplexd* res, Index resStride,
+            dtmm::DComplexd* res, Index resIncr, Index resStride,
             dtmm::DComplexd alpha,
             level3_blocking<dtmm::DComplexd, dtmm::DComplexd>& /*blocking*/,
             GemmParallelInfo<Index>* /*info = 0*/)

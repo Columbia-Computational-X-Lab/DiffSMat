@@ -76,7 +76,7 @@ mark_as_advanced(ROOT_TESTS_DIR)
 #===================================================================
 find_package(TBB 2.2 REQUIRED)
 if (TBB_FOUND)
-    message(STATUS "Found Intel TBB version ${TBB_VERSION}: ${TBB_INCLUDE_DIRS}")
+    message(STATUS "Found Intel TBB version ${TBB_VERSION}: ${TBB_INCLUDE_DIRS} ${TBB_LIBRARIES}")
 endif ()
 
 find_package(MKL REQUIRED)
