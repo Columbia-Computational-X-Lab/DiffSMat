@@ -15,6 +15,10 @@ It depends on the following libraries:
 - [Intel® oneAPI Threading Building Blocks](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html) (2021.5 or newer)
 - [Intel® oneAPI Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html)
 
+After the installation of Intel® oneAPI, please remember to go to the main directory (like /opt/intel/oneapi, dependent on where you install the library) and try 
+`source setvars.sh`
+to set the environment variables that cmake will need.
+
 Please make sure you have the above libraries correctly installed to proceed. Once all dependencies are solved, you can do the following steps to build the program.
 
 Firstly, go to the main directory of this respository (where CMakeLists.txt is).
