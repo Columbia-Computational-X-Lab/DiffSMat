@@ -72,3 +72,5 @@ Now you can call
 to get the derivative of scattering matrix.
 
 We also provide codes for more general grid-based and star-convex-shape-based configuration. Please refer to the code for more details.
+
+An example code is made available [here](https://gist.github.com/2iw31Zhv/c6087267b471703a7da1aad9d86d607d)
