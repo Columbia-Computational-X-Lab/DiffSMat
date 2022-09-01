@@ -39,7 +39,7 @@ For example, in *test5()* of *test_smat_deriv.cpp* you will find the following c
 
 ` const int N = 23;`
 
-This line specifies half of the harmonics per dimension in xy-plane. Therefore, here we assume 47x47 harmonics. Specifying half of the harmonics is to ensure the number of harmonics for one dimension is always an odd number, which ensures the existence of central harmonic.
+This line specifies the number of harmonics per dimension in xy-plane. Therefore. Specifying an odd number of the harmonics ensures the existence of central harmonic.
 
     const scalar lambda = 1.55;
     const scalar wx = 1.0;
