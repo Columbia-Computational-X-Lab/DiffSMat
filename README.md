@@ -4,6 +4,7 @@
 
 Ziwei Zhu, and Changxi Zheng. [Differentiable Scattering Matrix for Optimization of Photonic Structures](https://opg.optica.org/oe/fulltext.cfm?uri=oe-28-25-37773). Optics Express 28.25 (2020).
 
+A PyTorch version is [here](https://github.com/2iw31Zhv/diffsmat_py).
 ## Compile
 The C++ program is currently built on Ubuntu 18.04. The lastest C++ version (C++17) is recommended.
 
